@@ -23,7 +23,7 @@ class RefundExample
             'amount'=>1
         );
 
-        echo Refund::create('ch_b98d0e24089c96d60a075a95',$req_data);
+        echo Refund::create('ch_00f0d0e875a7dade329e4c90',$req_data);
     }
 
     public function retrieve($chargeId=null,$refundId=null){
@@ -32,7 +32,7 @@ class RefundExample
     }
 
     public function initSignConfig(){
-        SignConfig::setSecretKey("8b52445081e342aa8e71aa852284c7ba");
+        SignConfig::setSecretKey("55970fdbbf10459f966a8e276afa86fa");
         SignConfig::setPrivateKeyPath("rsa_private_key.pem");
         SignConfig::setPaymaxPublicKeyPath("paymax_rsa_public_key.pem");
     }
@@ -40,4 +40,4 @@ class RefundExample
 
 $chargeObj = new RefundExample();
 $chargeObj->charge();
-$chargeObj->retrieve("ch_b98d0e24089c96d60a075a95","123123123123");
+$chargeObj->retrieve("ch_00f0d0e875a7dade329e4c90","123123123123");
