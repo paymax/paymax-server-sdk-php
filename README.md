@@ -8,8 +8,8 @@
 2. 我们为您写好了相应的示例, 参见以下两个类:
    - [`ChargeExample`](paymax/example/ChargeExample.php) 支付
    - [`RefundExample`](paymax/example/RefundExample.php) 退款
-3. 为了方便进行测试, 我们已经在[`SignConfig`](paymax/config/SignConfig.java)中做好了一份配置, 您可以直接执行相应的示例进行体验进行体验。
-4. 在发起真正的请求之前, 需要在[`SignConfig`](paymax/config/SignConfig.java)中配置自己的私钥、商户SecretKey、Paymax公钥。
+3. 为了方便进行测试, 我们已经在[`SignConfig`](paymax/config/SignConfig.php)中做好了一份配置, 您可以直接执行相应的示例进行体验进行体验。
+4. 在发起真正的请求之前, 需要在[`SignConfig`](paymax/config/SignConfig.php)中配置自己的私钥、商户SecretKey、Paymax公钥。
 
 
 
