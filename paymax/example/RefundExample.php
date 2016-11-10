@@ -23,7 +23,7 @@ class RefundExample
             'amount'=>1
         );
 
-        echo Refund::create('ch_00f0d0e875a7dade329e4c90',$req_data);
+        echo Refund::create('ch_486beb15527fe37af1aac5b5',$req_data);
     }
 
     public function retrieve($chargeId=null,$refundId=null){
@@ -40,4 +40,4 @@ class RefundExample
 
 $chargeObj = new RefundExample();
 $chargeObj->charge();
-$chargeObj->retrieve("ch_00f0d0e875a7dade329e4c90","123123123123");
+$chargeObj->retrieve("ch_486beb15527fe37af1aac5b5","123123123123");

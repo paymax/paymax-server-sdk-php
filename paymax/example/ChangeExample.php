@@ -25,11 +25,13 @@ class ChangeExample
             'subject'=>'Your Subject',
             'body'=>'Your Body',
             'order_no'=>PaymaxUtil::createUniqid(),
-            'channel'=>'alipay_app',
+            'channel'=>'lakala_h5',
             'client_ip'=>'127.0.0.1',
             'app'=>'app_7hqF2S6GYXET457i',
             'currency'=>'CNY',
-            'description'=>'description'
+            'description'=>'description',
+            'extra'=>array('user_id'=>'123')
+
         );
 
         echo Charge::create($req_data);
@@ -43,10 +45,10 @@ class ChangeExample
     public function initSignConfig(){
         SignConfig::setSecretKey("55970fdbbf10459f966a8e276afa86fa");
         SignConfig::setPrivateKeyPath("rsa_private_key.pem");
-        SignConfig::setPaymaxPublicKeyPath("paymax_rsa_public_key.pem"); 
+        SignConfig::setPaymaxPublicKeyPath("paymax_rsa_public_key.pem");
     }
 }
 
 $chargeObj = new ChangeExample();
 $chargeObj->charge();
-$chargeObj->retrieve("ch_00f0d0e875a7dade329e4c90");
+$chargeObj->retrieve("ch_486beb15527fe37af1aac5b5");
