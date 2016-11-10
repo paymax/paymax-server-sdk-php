@@ -43,7 +43,7 @@ class ChangeExample
     public function initSignConfig(){
         SignConfig::setSecretKey("55970fdbbf10459f966a8e276afa86fa");
         SignConfig::setPrivateKeyPath("rsa_private_key.pem");
-        SignConfig::setPaymaxPublicKeyPath("paymax_rsa_public_key.pem");
+        SignConfig::setPaymaxPublicKeyPath("paymax_rsa_public_key.pem"); 
     }
 }
 
