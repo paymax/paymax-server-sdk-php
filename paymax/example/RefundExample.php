@@ -16,7 +16,7 @@ require ("../init.php");
 class RefundExample
 {
 
-    public function charge(){
+    public function refund(){
         $this->initSignConfig();
 
         $req_data=array(
@@ -39,5 +39,5 @@ class RefundExample
 }
 
 $chargeObj = new RefundExample();
-$chargeObj->charge();
+$chargeObj->refund();
 $chargeObj->retrieve("ch_486beb15527fe37af1aac5b5","123123123123");
