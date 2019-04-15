@@ -20,9 +20,9 @@ class ApiResource extends Paymax
         self::_validateParams();
         $_http = new HttpCurlUtil();
         if (empty($params)){
-            return $_http -> get($url, null, 5);
+            return $_http -> get($url, null, 60);
         }else {
-            return $_http -> post($url, $params, 5);
+            return $_http -> post($url, $params, 60);
         }
     }
 

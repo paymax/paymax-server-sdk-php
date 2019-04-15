@@ -204,7 +204,7 @@ class HttpCurlUtil
 
             $response_code=intval(curl_getinfo($ch, CURLINFO_HTTP_CODE));
 
-            if ($response_code<400){
+            if ($response_code=200){
                 $this->to_verify_data($res_header, $body_data);
             }
         }catch (Exception $e) {
